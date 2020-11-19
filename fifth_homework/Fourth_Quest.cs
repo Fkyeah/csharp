@@ -35,7 +35,7 @@ class Fourth_Quest
             {
                 ArrayOfStudents[i] = view.getString("Введите данные ученика:");
                 string[] tempArrayOfStudents = ArrayOfStudents[i].Split(' ');
-                if (tempArrayOfStudents.Length < 5)
+                if (tempArrayOfStudents.Length < 5 || tempArrayOfStudents.Length > 5)
                 {
                     throw new Exception("Неверный формат ввода данных. Данные передаются в формате: Иванов Иван 3 4 5");
                 }
