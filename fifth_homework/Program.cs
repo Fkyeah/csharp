@@ -11,6 +11,7 @@ class Program
         Console.WriteLine("2 - Класс Message по работе со стороками");
         Console.WriteLine("3 - Проверка перестановки строк");
         Console.WriteLine("4 - Задание ЕГЭ с учениками");
+        Console.WriteLine("5 - Игра: Верю. Не верю.");
         Console.WriteLine("0 - для выхода из программы");
         View view = new View();
         while (true)
@@ -33,6 +34,10 @@ class Program
                 case 4:
                     Fourth_Quest fourth = new Fourth_Quest();
                     fourth.Main();
+                    break;
+                case 5:
+                    Fifth_Quest fifth = new Fifth_Quest();
+                    fifth.Main();
                     break;
                 case 0:
                     Environment.Exit(0);
