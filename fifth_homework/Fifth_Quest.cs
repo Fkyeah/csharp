@@ -8,7 +8,7 @@ class Fifth_Quest
     View view = new View();
     List<string[]> _questAndAnswer = new List<string[]>();
     string path = "Game.txt";
-    public void ReadFile()
+    private void ReadFile()
     {
         StreamReader text = new StreamReader(path);
         while (!text.EndOfStream)
@@ -17,11 +17,11 @@ class Fifth_Quest
         }
         text.Close();
     }
-    public bool CheckAnswer(int numberQuestion, string userAnswer)
+    private bool CheckAnswer(int numberQuestion, string userAnswer)
     {
         return _questAndAnswer[numberQuestion][_questAndAnswer[numberQuestion].Length - 1].ToLower() == userAnswer;
     }
-    public string UserAnswer()
+    private string UserAnswer()
     {
         string userAnswer = "";
         while (userAnswer != "да" && userAnswer != "нет")
@@ -33,7 +33,7 @@ class Fifth_Quest
         return userAnswer;
     }
 
-    public int Game()
+    private int Game()
     {
         int countQuestion = 5;
         Random r = new Random();

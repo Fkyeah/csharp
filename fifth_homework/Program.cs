@@ -6,16 +6,16 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("Домашнее задание Студента GeekBrains Тихонова Дмитрия");
-        Console.WriteLine("Выберите номер задания, которое хотите выполнить:");
-        Console.WriteLine("1 - Авторизация.Проверка логина");
-        Console.WriteLine("2 - Класс Message по работе со стороками");
-        Console.WriteLine("3 - Проверка перестановки строк");
-        Console.WriteLine("4 - Задание ЕГЭ с учениками");
-        Console.WriteLine("5 - Игра: Верю. Не верю.");
-        Console.WriteLine("0 - для выхода из программы");
         View view = new View();
         while (true)
         {
+            Console.WriteLine("Выберите номер задания, которое хотите выполнить:");
+            Console.WriteLine("1 - Авторизация.Проверка логина");
+            Console.WriteLine("2 - Класс Message по работе со стороками");
+            Console.WriteLine("3 - Проверка перестановки строк");
+            Console.WriteLine("4 - Задание ЕГЭ с учениками");
+            Console.WriteLine("5 - Игра: Верю. Не верю.");
+            Console.WriteLine("0 - для выхода из программы");
             int UserChoise = view.getInt("Выберите вариант задания для проверки:");
             switch (UserChoise)
             {
