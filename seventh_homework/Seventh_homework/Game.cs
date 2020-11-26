@@ -21,7 +21,20 @@ namespace Seventh_homework_first_quest
             InitializeComponent();
             NumberGenerator numberGenerator = new NumberGenerator(100);
             GameNumberLabel.Text = numberGenerator.Result.ToString();
+            int result = Int32.Parse(GameNumberLabel.Text);
+            Label_CountMinValueSteps.Text = countCompStep(result).ToString();
             CountUserStep = 0;
+        }
+        public int countCompStep(int value)
+        {
+            int minCountStep = 0;
+            while(value != 0)
+            {
+                if (value % 2 != 0) value -= 1;
+                else value /= 2;
+                minCountStep++;
+            }
+            return minCountStep;
         }
 
         private void btnCommand1_Click(object sender, EventArgs e)

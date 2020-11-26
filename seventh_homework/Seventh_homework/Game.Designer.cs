@@ -38,6 +38,8 @@
             this.LabelSteps = new System.Windows.Forms.Label();
             this.LabelCountSteps = new System.Windows.Forms.Label();
             this.ButtonMenu = new System.Windows.Forms.Button();
+            this.Label_InfoMinValueSteps = new System.Windows.Forms.Label();
+            this.Label_CountMinValueSteps = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnCommand1
@@ -73,7 +75,7 @@
             // UserNumberLabel
             // 
             this.UserNumberLabel.AutoSize = true;
-            this.UserNumberLabel.Location = new System.Drawing.Point(39, 210);
+            this.UserNumberLabel.Location = new System.Drawing.Point(39, 191);
             this.UserNumberLabel.Name = "UserNumberLabel";
             this.UserNumberLabel.Size = new System.Drawing.Size(16, 17);
             this.UserNumberLabel.TabIndex = 3;
@@ -92,7 +94,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(39, 169);
+            this.label2.Location = new System.Drawing.Point(39, 144);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(133, 17);
             this.label2.TabIndex = 5;
@@ -101,7 +103,7 @@
             // GameNumberLabel
             // 
             this.GameNumberLabel.AutoSize = true;
-            this.GameNumberLabel.Location = new System.Drawing.Point(42, 115);
+            this.GameNumberLabel.Location = new System.Drawing.Point(39, 101);
             this.GameNumberLabel.Name = "GameNumberLabel";
             this.GameNumberLabel.Size = new System.Drawing.Size(16, 17);
             this.GameNumberLabel.TabIndex = 6;
@@ -110,7 +112,7 @@
             // LabelSteps
             // 
             this.LabelSteps.AutoSize = true;
-            this.LabelSteps.Location = new System.Drawing.Point(42, 272);
+            this.LabelSteps.Location = new System.Drawing.Point(39, 235);
             this.LabelSteps.Name = "LabelSteps";
             this.LabelSteps.Size = new System.Drawing.Size(127, 17);
             this.LabelSteps.TabIndex = 7;
@@ -119,7 +121,7 @@
             // LabelCountSteps
             // 
             this.LabelCountSteps.AutoSize = true;
-            this.LabelCountSteps.Location = new System.Drawing.Point(42, 325);
+            this.LabelCountSteps.Location = new System.Drawing.Point(39, 283);
             this.LabelCountSteps.Name = "LabelCountSteps";
             this.LabelCountSteps.Size = new System.Drawing.Size(16, 17);
             this.LabelCountSteps.TabIndex = 8;
@@ -135,11 +137,31 @@
             this.ButtonMenu.UseVisualStyleBackColor = true;
             this.ButtonMenu.Click += new System.EventHandler(this.ButtonMenu_Click);
             // 
+            // Label_InfoMinValueSteps
+            // 
+            this.Label_InfoMinValueSteps.AutoSize = true;
+            this.Label_InfoMinValueSteps.Location = new System.Drawing.Point(39, 336);
+            this.Label_InfoMinValueSteps.Name = "Label_InfoMinValueSteps";
+            this.Label_InfoMinValueSteps.Size = new System.Drawing.Size(368, 17);
+            this.Label_InfoMinValueSteps.TabIndex = 10;
+            this.Label_InfoMinValueSteps.Text = "Минимальное количество шагов для получения числа";
+            // 
+            // Label_CountMinValueSteps
+            // 
+            this.Label_CountMinValueSteps.AutoSize = true;
+            this.Label_CountMinValueSteps.Location = new System.Drawing.Point(39, 388);
+            this.Label_CountMinValueSteps.Name = "Label_CountMinValueSteps";
+            this.Label_CountMinValueSteps.Size = new System.Drawing.Size(16, 17);
+            this.Label_CountMinValueSteps.TabIndex = 11;
+            this.Label_CountMinValueSteps.Text = "0";
+            // 
             // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(782, 453);
+            this.Controls.Add(this.Label_CountMinValueSteps);
+            this.Controls.Add(this.Label_InfoMinValueSteps);
             this.Controls.Add(this.ButtonMenu);
             this.Controls.Add(this.LabelCountSteps);
             this.Controls.Add(this.LabelSteps);
@@ -173,6 +195,8 @@
         private System.Windows.Forms.Label LabelSteps;
         private System.Windows.Forms.Label LabelCountSteps;
         private System.Windows.Forms.Button ButtonMenu;
+        private System.Windows.Forms.Label Label_InfoMinValueSteps;
+        private System.Windows.Forms.Label Label_CountMinValueSteps;
     }
 }
 
