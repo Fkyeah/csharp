@@ -1,0 +1,19 @@
+C:\Users\Пользователь\Desktop\GeekBrains\5 Основы языка C-sharp\Lesson_eighth_homework\Eighth_homework_first\Eighth_homework\bin\Debug\Eighth_homework.exe.config
+C:\Users\Пользователь\Desktop\GeekBrains\5 Основы языка C-sharp\Lesson_eighth_homework\Eighth_homework_first\Eighth_homework\bin\Debug\Eighth_homework.exe
+C:\Users\Пользователь\Desktop\GeekBrains\5 Основы языка C-sharp\Lesson_eighth_homework\Eighth_homework_first\Eighth_homework\bin\Debug\Eighth_homework.pdb
+C:\Users\Пользователь\Desktop\GeekBrains\5 Основы языка C-sharp\Lesson_eighth_homework\Eighth_homework_first\Eighth_homework\obj\Debug\Eighth_homework.Form1.resources
+C:\Users\Пользователь\Desktop\GeekBrains\5 Основы языка C-sharp\Lesson_eighth_homework\Eighth_homework_first\Eighth_homework\obj\Debug\Eighth_homework.Properties.Resources.resources
+C:\Users\Пользователь\Desktop\GeekBrains\5 Основы языка C-sharp\Lesson_eighth_homework\Eighth_homework_first\Eighth_homework\obj\Debug\DatabaseCreator.csproj.GenerateResource.cache
+C:\Users\Пользователь\Desktop\GeekBrains\5 Основы языка C-sharp\Lesson_eighth_homework\Eighth_homework_first\Eighth_homework\obj\Debug\DatabaseCreator.csproj.CoreCompileInputs.cache
+C:\Users\Пользователь\Desktop\GeekBrains\5 Основы языка C-sharp\Lesson_eighth_homework\Eighth_homework_first\Eighth_homework\obj\Debug\Eighth_homework.exe
+C:\Users\Пользователь\Desktop\GeekBrains\5 Основы языка C-sharp\Lesson_eighth_homework\Eighth_homework_first\Eighth_homework\obj\Debug\Eighth_homework.pdb
+C:\Users\Пользователь\Desktop\GeekBrains\C-SHARP\Repository\csharp\C-sharp level one\eighth_homework\Eighth_homework\bin\Debug\Eighth_homework.exe.config
+C:\Users\Пользователь\Desktop\GeekBrains\C-SHARP\Repository\csharp\C-sharp level one\eighth_homework\Eighth_homework\bin\Debug\Eighth_homework.exe
+C:\Users\Пользователь\Desktop\GeekBrains\C-SHARP\Repository\csharp\C-sharp level one\eighth_homework\Eighth_homework\bin\Debug\Eighth_homework.pdb
+C:\Users\Пользователь\Desktop\GeekBrains\C-SHARP\Repository\csharp\C-sharp level one\eighth_homework\Eighth_homework\obj\Debug\DatabaseCreator.csprojAssemblyReference.cache
+C:\Users\Пользователь\Desktop\GeekBrains\C-SHARP\Repository\csharp\C-sharp level one\eighth_homework\Eighth_homework\obj\Debug\Eighth_homework.Form1.resources
+C:\Users\Пользователь\Desktop\GeekBrains\C-SHARP\Repository\csharp\C-sharp level one\eighth_homework\Eighth_homework\obj\Debug\Eighth_homework.Properties.Resources.resources
+C:\Users\Пользователь\Desktop\GeekBrains\C-SHARP\Repository\csharp\C-sharp level one\eighth_homework\Eighth_homework\obj\Debug\DatabaseCreator.csproj.GenerateResource.cache
+C:\Users\Пользователь\Desktop\GeekBrains\C-SHARP\Repository\csharp\C-sharp level one\eighth_homework\Eighth_homework\obj\Debug\DatabaseCreator.csproj.CoreCompileInputs.cache
+C:\Users\Пользователь\Desktop\GeekBrains\C-SHARP\Repository\csharp\C-sharp level one\eighth_homework\Eighth_homework\obj\Debug\Eighth_homework.exe
+C:\Users\Пользователь\Desktop\GeekBrains\C-SHARP\Repository\csharp\C-sharp level one\eighth_homework\Eighth_homework\obj\Debug\Eighth_homework.pdb
