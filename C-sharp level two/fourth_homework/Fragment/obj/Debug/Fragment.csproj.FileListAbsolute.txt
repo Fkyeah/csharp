@@ -1,0 +1,7 @@
+C:\Users\Пользователь\Desktop\GeekBrains\C-SHARP\6 C-sharp Уровень 2\4 Урок\fourth_homework\Fragment\bin\Debug\Fragment.exe.config
+C:\Users\Пользователь\Desktop\GeekBrains\C-SHARP\6 C-sharp Уровень 2\4 Урок\fourth_homework\Fragment\bin\Debug\Fragment.exe
+C:\Users\Пользователь\Desktop\GeekBrains\C-SHARP\6 C-sharp Уровень 2\4 Урок\fourth_homework\Fragment\bin\Debug\Fragment.pdb
+C:\Users\Пользователь\Desktop\GeekBrains\C-SHARP\6 C-sharp Уровень 2\4 Урок\fourth_homework\Fragment\obj\Debug\Fragment.csprojAssemblyReference.cache
+C:\Users\Пользователь\Desktop\GeekBrains\C-SHARP\6 C-sharp Уровень 2\4 Урок\fourth_homework\Fragment\obj\Debug\Fragment.csproj.CoreCompileInputs.cache
+C:\Users\Пользователь\Desktop\GeekBrains\C-SHARP\6 C-sharp Уровень 2\4 Урок\fourth_homework\Fragment\obj\Debug\Fragment.exe
+C:\Users\Пользователь\Desktop\GeekBrains\C-SHARP\6 C-sharp Уровень 2\4 Урок\fourth_homework\Fragment\obj\Debug\Fragment.pdb
