@@ -1,0 +1,26 @@
+﻿<Window x:Class="Doubler.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Doubler"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="250" Width="500">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="btnIncrement"  Content="+1" Margin="20,50,150,120" Width="75" Grid.Column="1" Click="btnIncrement_click"/>
+        <Button x:Name="btnDoubling"  Content="x2" Margin="20,130,150,40" Width="75" Grid.Column="1" Click="btnDoubling_click"/>
+        <TextBox x:Name="tbUserNumb" HorizontalAlignment="Left" Height="23" Margin="50,70" TextWrapping="Wrap" Text="UserNumber" VerticalAlignment="Top" Width="120" IsReadOnly="True"/>
+        <Label Content="Ваше число:" HorizontalAlignment="Left" Margin="50,32" VerticalAlignment="Top" Grid.Column="0"/>
+        <Label Content="Число, которое нужно получить" HorizontalAlignment="Left" Margin="50,112,0,0" VerticalAlignment="Top" Grid.Column="0"/>
+        <TextBox x:Name="tbAnswer" HorizontalAlignment="Left" Height="23" Margin="50,157,0,0" Grid.Column="0" TextWrapping="Wrap" Text="Answer" VerticalAlignment="Top" Width="120" IsReadOnly="True"/>
+        <Label x:Name="lblCountSteps" Content="Количество шагов:" Grid.Column="1" HorizontalAlignment="Right" Margin="0 50"/>
+        <Label x:Name="lblNumbStep" Content="0" Grid.Column="1" HorizontalAlignment="Right" Margin="97 70"/>
+    </Grid>
+</Window>
