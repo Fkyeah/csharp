@@ -1,0 +1,11 @@
+C:\Users\Пользователь\Desktop\Уроки с#\Змейка\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Пользователь\Desktop\Уроки с#\Змейка\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Пользователь\Desktop\Уроки с#\Змейка\ConsoleApplication1\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Users\Пользователь\Desktop\Уроки с#\Змейка\ConsoleApplication1\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Users\Пользователь\Desktop\Уроки с#\Змейка\ConsoleApplication1\ConsoleApplication1\obj\x86\Debug\Snake.csprojResolveAssemblyReference.cache
+C:\Users\Пользователь\Desktop\Дима\Уроки с#\Змейка\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Пользователь\Desktop\Дима\Уроки с#\Змейка\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Пользователь\Desktop\Дима\Уроки с#\Змейка\ConsoleApplication1\ConsoleApplication1\obj\x86\Debug\Snake.csprojAssemblyReference.cache
+C:\Users\Пользователь\Desktop\Дима\Уроки с#\Змейка\ConsoleApplication1\ConsoleApplication1\obj\x86\Debug\Snake.csproj.CoreCompileInputs.cache
+C:\Users\Пользователь\Desktop\Дима\Уроки с#\Змейка\ConsoleApplication1\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Users\Пользователь\Desktop\Дима\Уроки с#\Змейка\ConsoleApplication1\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
