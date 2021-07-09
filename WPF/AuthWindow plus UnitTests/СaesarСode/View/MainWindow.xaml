@@ -1,0 +1,133 @@
+﻿<Window x:Class="СaesarСode.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:СaesarСode"
+        xmlns:vm="clr-namespace:СaesarСode.ViewModel"
+        mc:Ignorable="d"
+        Title="Caesar Code"
+        Height="450" 
+        Width="600"
+        Background="#c2bce3">
+    <Window.DataContext>
+        <vm:ViewModel/>
+    </Window.DataContext>
+    <Window.Resources>
+        <Style TargetType="TextBox">
+            <Style.Triggers>
+                <Trigger Property="Validation.HasError" Value="True">
+                    <Setter Property="ToolTip" 
+                            Value="{Binding RelativeSource={x:Static RelativeSource.Self}, 
+                                        Path=(Validation.Errors)[0].ErrorContent}" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Grid TextBlock.FontSize="15">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="1.5*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0"
+                        Orientation="Vertical"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center">
+                <TextBlock Text="Введите строку"
+                           Margin="0 0 0 10"/>
+                <TextBox Width="250"
+                         Height="30"
+                         FontSize="15">
+                    <TextBox.Text>
+                        <Binding Path="caesarModel.Message"
+                                 UpdateSourceTrigger="PropertyChanged"
+                                 Mode="TwoWay"
+                                 ValidatesOnExceptions="True">
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+                <TextBlock Text="Введите индекс шифрования"
+                           Margin="0 10 0 10"/>
+                <TextBox Width="50"
+                         Height="30"
+                         HorizontalAlignment="Left"
+                         FontSize="15">
+                    <TextBox.Text>
+                        <Binding Path="caesarModel.Index"
+                                 UpdateSourceTrigger="PropertyChanged"
+                                 Mode="TwoWay"
+                                 ValidatesOnExceptions="True">
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="1"
+                        Orientation="Vertical"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center">
+                <TextBlock Text="Зашифрованная строка"
+                           Margin="0 0 0 10"/>
+                <TextBox Background="White"
+                           Width="250"
+                           Height="30"
+                           FontSize="15"
+                           IsReadOnly="True"
+                           Text="{Binding caesarModel.EcryptMessage, 
+                                  UpdateSourceTrigger=PropertyChanged, 
+                                  Mode=TwoWay}"/>
+            </StackPanel>
+            <StackPanel Grid.Row="2"
+                        Orientation="Vertical"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center">
+                <TextBlock Text="Расшифрованная строка"
+                           Margin="0 0 0 10"/>
+                <TextBox Background="White"
+                           Width="250"
+                           Height="30"
+                           IsReadOnly="True"
+                           Text="{Binding caesarModel.DecryptMessage, 
+                                  UpdateSourceTrigger=PropertyChanged, 
+                                  Mode=TwoWay}"/>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Button Grid.Row="0"
+                    Width="150"
+                    Height="150"
+                    FontSize="20"
+                    Content="Зашифровать!"
+                    Command="{Binding ClickEncrypt}"
+                    Background="#80f77e">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="100"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Grid.Row="1"
+                    Width="150"
+                    Height="150"
+                    FontSize="20"
+                    Content="Расшифровать!"
+                    Background="#f78ba4"
+                    Command="{Binding ClickDecode}">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="100"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </Grid>
+    </Grid>
+</Window>
