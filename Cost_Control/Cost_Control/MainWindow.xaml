@@ -1,0 +1,48 @@
+﻿<Window x:Class="Cost_Control.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Cost_Control"
+        xmlns:cmvm="clr-namespace:Cost_Control.CostManager"
+        xmlns:rvm="clr-namespace:Cost_Control.Reports"
+        xmlns:uvm="clr-namespace:Cost_Control.Users"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        Title="MainWindow" Height="450" Width="900">
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Closing">
+            <i:InvokeCommandAction Command="{Binding WindowClosing}" />
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type cmvm:CostManagerViewModel}">
+            <cmvm:CostManagerView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type rvm:ReportsViewModel}">
+            <rvm:ReportsView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type uvm:UsersViewModel}">
+            <uvm:UsersView/>
+        </DataTemplate>
+    </Window.Resources>
+    <Window.DataContext>
+        <local:MainViewModel/>
+    </Window.DataContext>
+    <DockPanel>
+        <Border DockPanel.Dock="Left" 
+                BorderBrush="Black" 
+                BorderThickness="0,0,1,0">
+            <ItemsControl ItemsSource="{Binding PageViewModels}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Button Content="{Binding Name}"
+                                Command="{Binding DataContext.ChangePageCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}"
+                                CommandParameter="{Binding }"
+                                Margin="2,5"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </Border>
+        <ContentControl Content="{Binding CurrentPageViewModel}" />
+    </DockPanel>
+</Window>
