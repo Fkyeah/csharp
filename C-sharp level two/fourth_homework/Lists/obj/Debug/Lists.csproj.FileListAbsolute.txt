@@ -1,7 +1,0 @@
-C:\Users\Пользователь\Desktop\GeekBrains\C-SHARP\6 C-sharp Уровень 2\4 Урок\fourth_homework\Lists\bin\Debug\Lists.exe.config
-C:\Users\Пользователь\Desktop\GeekBrains\C-SHARP\6 C-sharp Уровень 2\4 Урок\fourth_homework\Lists\bin\Debug\Lists.exe
-C:\Users\Пользователь\Desktop\GeekBrains\C-SHARP\6 C-sharp Уровень 2\4 Урок\fourth_homework\Lists\bin\Debug\Lists.pdb
-C:\Users\Пользователь\Desktop\GeekBrains\C-SHARP\6 C-sharp Уровень 2\4 Урок\fourth_homework\Lists\obj\Debug\Lists.csprojAssemblyReference.cache
-C:\Users\Пользователь\Desktop\GeekBrains\C-SHARP\6 C-sharp Уровень 2\4 Урок\fourth_homework\Lists\obj\Debug\Lists.csproj.CoreCompileInputs.cache
-C:\Users\Пользователь\Desktop\GeekBrains\C-SHARP\6 C-sharp Уровень 2\4 Урок\fourth_homework\Lists\obj\Debug\Lists.exe
-C:\Users\Пользователь\Desktop\GeekBrains\C-SHARP\6 C-sharp Уровень 2\4 Урок\fourth_homework\Lists\obj\Debug\Lists.pdb
