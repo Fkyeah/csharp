@@ -1,0 +1,16 @@
+C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\8 С-sharp Уровень 3\4 Урок\Корректный\Third_Homework\СaesarСode\bin\Debug\СaesarСode.exe.config
+C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\8 С-sharp Уровень 3\4 Урок\Корректный\Third_Homework\СaesarСode\bin\Debug\СaesarСode.exe
+C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\8 С-sharp Уровень 3\4 Урок\Корректный\Third_Homework\СaesarСode\bin\Debug\СaesarСode.pdb
+C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\8 С-sharp Уровень 3\4 Урок\Корректный\Third_Homework\СaesarСode\obj\Debug\View\MainWindow.g.cs
+C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\8 С-sharp Уровень 3\4 Урок\Корректный\Third_Homework\СaesarСode\obj\Debug\App.g.cs
+C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\8 С-sharp Уровень 3\4 Урок\Корректный\Third_Homework\СaesarСode\obj\Debug\СaesarСode_MarkupCompile.cache
+C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\8 С-sharp Уровень 3\4 Урок\Корректный\Third_Homework\СaesarСode\obj\Debug\СaesarСode_MarkupCompile.lref
+C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\8 С-sharp Уровень 3\4 Урок\Корректный\Third_Homework\СaesarСode\obj\Debug\View\MainWindow.baml
+C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\8 С-sharp Уровень 3\4 Урок\Корректный\Third_Homework\СaesarСode\obj\Debug\СaesarСode.g.resources
+C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\8 С-sharp Уровень 3\4 Урок\Корректный\Third_Homework\СaesarСode\obj\Debug\СaesarСode.Properties.Resources.resources
+C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\8 С-sharp Уровень 3\4 Урок\Корректный\Third_Homework\СaesarСode\obj\Debug\СaesarСode.csproj.GenerateResource.cache
+C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\8 С-sharp Уровень 3\4 Урок\Корректный\Third_Homework\СaesarСode\obj\Debug\СaesarСode.csproj.CoreCompileInputs.cache
+C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\8 С-sharp Уровень 3\4 Урок\Корректный\Third_Homework\СaesarСode\obj\Debug\СaesarСode.exe
+C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\8 С-sharp Уровень 3\4 Урок\Корректный\Third_Homework\СaesarСode\obj\Debug\СaesarСode.pdb
+C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\8 С-sharp Уровень 3\4 Урок\Корректный\Third_Homework\СaesarСode\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\8 С-sharp Уровень 3\4 Урок\Корректный\Third_Homework\СaesarСode\obj\Debug\СaesarСode.csprojAssemblyReference.cache
