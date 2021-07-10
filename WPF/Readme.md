@@ -12,6 +12,13 @@ AuthWindow:
 5) Unit Tests
 6) Serialize
 
+AuthWindowWithEF:
+1) WPF
+2) MVVM
+3) XAML
+4) Entity FrameWork
+5) Reports
+
 Cost_Control
 1) WPF
 2) MVVM
