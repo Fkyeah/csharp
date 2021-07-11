@@ -16,7 +16,7 @@ AuthWindowWithEF:
 1) WPF
 2) MVVM
 3) XAML
-4) Entity FrameWork
+4) Entity Framework
 5) Reports
 
 Cost_Control
