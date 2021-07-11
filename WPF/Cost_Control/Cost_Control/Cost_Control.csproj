@@ -68,7 +68,8 @@
     <Compile Include="CostManager\CostManagerViewModel.cs" />
     <Compile Include="CostManager\Model\Cost.cs" />
     <Compile Include="CostManager\Model\CostList.cs" />
-    <Compile Include="Reports\Model\Stats.cs" />
+    <Compile Include="Reports\Model\Stat.cs" />
+    <Compile Include="Reports\Model\StatsList.cs" />
     <Compile Include="Users\Model\User.cs" />
     <Compile Include="Users\Model\UserList.cs" />
     <Compile Include="DelegateCommand.cs" />

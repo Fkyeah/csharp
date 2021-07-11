@@ -7,15 +7,15 @@ using System.Linq;
 namespace Cost_Control.CostManager.Model
 {
     [Serializable]
-    public static class CostList
+    public class CostList
     {
-        private static string _fileName = "JsonCosts.json";
-        private static ObservableCollection<Cost> _costs = LoadCosts();
-        public static ObservableCollection<Cost> Costs
+        private string _fileName = "JsonCosts.json";
+        private ObservableCollection<Cost> _costs = new ObservableCollection<Cost>();
+        public ObservableCollection<Cost> Costs
         {
             get => _costs;
         }
-        public static ObservableCollection<Cost> LoadCosts()
+        public ObservableCollection<Cost> LoadCosts()
         {
             try
             {
@@ -29,10 +29,10 @@ namespace Cost_Control.CostManager.Model
             {
                 Console.WriteLine(e.Message);
             }
-            return _costs;
+            return Costs;
         }
 
-        public static void SaveCosts()
+        public void SaveCosts()
         {
             string json = JsonSerializer.Serialize(Costs);
             try
@@ -46,13 +46,13 @@ namespace Cost_Control.CostManager.Model
                 Console.WriteLine($"Запись не выполнена! Ошибка:\n{e.Message}");
             }
         }
-        public static ObservableCollection<Cost> GetCosts(string name, DateTime date)
+        public ObservableCollection<Cost> GetCosts(string name, DateTime date)
         {
-
+            LoadCosts();
             ObservableCollection<Cost> result = new ObservableCollection<Cost>();
             try
             {
-                var list = Costs.Where(t => t.User.Name == name && t.Date.ToString("d") == date.ToString("d"));
+                var list = Costs.Where(t => t.User.Name == name && t.Date == date);
                 foreach (var el in list)
                 {
                     result.Add(el);
@@ -65,28 +65,24 @@ namespace Cost_Control.CostManager.Model
             }
             return result;
         }
-        public static void AddCost(Cost cost)
+        public void AddCost(Cost cost)
         {
             if (_costs == null)
                 _costs = new ObservableCollection<Cost>();
             if (FindCost(cost))
-                _costs.First(t => t.CostName.ToLower() == cost.CostName.ToLower() && cost.Date.ToString("d") == t.Date.ToString("d")).Sum += cost.Sum;
+                _costs.First(t => t.User == cost.User && t.CostName.ToLower() == cost.CostName.ToLower() && cost.Date == t.Date).Sum += cost.Sum;
             else
                 _costs.Add(cost);
+            SaveCosts();
         }
 
-        public static void DeleteCost(Cost cost) => _costs.Remove(cost);
-
-        public static bool FindCost(Cost cost)
+        public void DeleteCost(Cost cost)
         {
-            foreach (var el in _costs)
-            {
-                if (el.CostName.ToLower() == cost.CostName.ToLower() && cost.Date.ToString("d") == el.Date.ToString("d") && UserList.FindUser(el.User))
-                    return true;
-            }
-            return false;
+            _costs.Remove(cost);
+            SaveCosts();
         }
-        public static double GetSum(string name, DateTime date)
+        public bool FindCost(Cost cost) => _costs.Any(el => el.CostName.ToLower() == cost.CostName.ToLower() && cost.Date == el.Date && el.User == cost.User);
+        public double GetSum(string name, DateTime date)
         {
             double result = 0;
             foreach (var el in _costs.Where(t => t.User.Name == name && t.Date == date))

@@ -10,8 +10,13 @@ namespace Cost_Control.CostManager
 {
     class CostManagerViewModel : ObservableObject, IPageViewModel
     {
+        public CostManagerViewModel()
+        {
+            Costs = costList.LoadCosts();
+        }
+        private CostList costList = new CostList();
         public string Name => "Cost_Manager";
-        public ObservableCollection<Cost> Costs { get; set; } = CostList.Costs;
+        public ObservableCollection<Cost> Costs { get; set; } = new ObservableCollection<Cost>();
         // Select current user in combo box. Start
         public IEnumerable<string> Users { get; set; } = UserList.GetUserList();
         public string SelectedName { get; set; }
@@ -30,9 +35,9 @@ namespace Cost_Control.CostManager
         // Select date in calendar. End
         private void SelectCosts(object obj)
         {
-            Costs = CostList.GetCosts(SelectedName, SelectedDate);
+            Costs = costList.GetCosts(SelectedName, SelectedDate);
             OnPropertyChanged("Costs");
-            TotalSum = CostList.GetSum(SelectedName, SelectedDate);
+            TotalSum = costList.GetSum(SelectedName, SelectedDate);
             OnPropertyChanged("TotalSum");
         }
         private bool CanSelect(object obj) => Costs != null;
@@ -45,7 +50,7 @@ namespace Cost_Control.CostManager
         }
         private void AddCost(object obj)
         {
-            CostList.AddCost(new Cost(UserList.Users.Where(t => t.Name == SelectedName).First(), CostName, CostSum, SelectedDate));
+            costList.AddCost(new Cost(UserList.Users.Where(t => t.Name == SelectedName).First(), CostName, CostSum, SelectedDate));
             SelectCosts(obj);
             CostName = "";
             CostSum = 0;
@@ -62,10 +67,22 @@ namespace Cost_Control.CostManager
         }
         private void DeleteCost(object obj)
         {
-            CostList.DeleteCost(SelectedCost);
+            costList.DeleteCost(SelectedCost);
             SelectCosts(obj);
         }
         private bool CanDelete(object obj) => SelectedCost == null ? false : true;
         // Click button DeleteCost. End
+        // Close main window. Start
+        public ICommand WindowClosing
+        {
+            get => new DelegateCommand(CloseWindow, CanCloseWindow);
+        }
+        private void CloseWindow(object obj)
+        {
+            costList.SaveCosts();
+            UserList.SaveUsers();
+        }
+        private bool CanCloseWindow(object obj) => true;
+        // Close main window. End
     }
 }

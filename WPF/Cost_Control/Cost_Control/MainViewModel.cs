@@ -10,7 +10,6 @@ namespace Cost_Control
 {
     class MainViewModel : ObservableObject
     {
-        
         public MainViewModel()
         {
             PageViewModels.Add(new CostManagerViewModel());
@@ -19,8 +18,7 @@ namespace Cost_Control
 
             CurrentPageViewModel = PageViewModels[0];
         }
-
-
+        
         private List<IPageViewModel> _pageViewModels;
         public List<IPageViewModel> PageViewModels
         {
@@ -83,17 +81,5 @@ namespace Cost_Control
             UserList.LoadUsers();
         }
         private bool CanLoadWindow(object obj) => true;
-        // Close main window. Start
-        public ICommand WindowClosing
-        {
-            get => new DelegateCommand(CloseWindow, CanCloseWindow);
-        }
-        private void CloseWindow(object obj)
-        {
-            CostList.SaveCosts();
-            UserList.SaveUsers();
-        }
-        private bool CanCloseWindow(object obj) => true;
-        // Close main window. End
     }
 }

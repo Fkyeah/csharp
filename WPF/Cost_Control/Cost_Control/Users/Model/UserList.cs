@@ -23,8 +23,7 @@ namespace Cost_Control.CostManager.Model
             }
         }
         public static IEnumerable<string> GetUserList() => from t in _users select t.Name;
-        public static bool FindUser(User user) => _users.Any(t => t.Id == user.Id) ? true : false;
-        private static bool FindUser(string userName) => _users.Any(t => t.Name == userName) ? true : false;
+        private static bool FindUser(string userName) => _users.Any(t => t.Name == userName);
         public static bool AddUser(string newUser)
         {
             int id;
@@ -35,13 +34,18 @@ namespace Cost_Control.CostManager.Model
             if (!FindUser(newUser))
             {
                 _users.Add(new User (id, newUser));
+                SaveUsers();
                 return true;
             }
             else
                 return false;
         }
-        public static void DeleteUser(User user) => Users.Remove(user);
-        public static void SaveUsers()
+        public static void DeleteUser(User user)
+        {
+            Users.Remove(user);
+            SaveUsers();
+        }
+            public static void SaveUsers()
         {
             string json = JsonSerializer.Serialize(_users);
             try

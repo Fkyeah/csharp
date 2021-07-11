@@ -7,13 +7,7 @@
         xmlns:cmvm="clr-namespace:Cost_Control.CostManager"
         xmlns:rvm="clr-namespace:Cost_Control.Reports"
         xmlns:uvm="clr-namespace:Cost_Control.Users"
-        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
         Title="MainWindow" Height="450" Width="900">
-    <i:Interaction.Triggers>
-        <i:EventTrigger EventName="Closing">
-            <i:InvokeCommandAction Command="{Binding WindowClosing}" />
-        </i:EventTrigger>
-    </i:Interaction.Triggers>
     <Window.Resources>
         <DataTemplate DataType="{x:Type cmvm:CostManagerViewModel}">
             <cmvm:CostManagerView/>

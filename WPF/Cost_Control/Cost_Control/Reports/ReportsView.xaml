@@ -8,11 +8,6 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <TextBlock Text="Страница в процессе разработки"
-                   FontSize="40"
-                   Panel.ZIndex="2"
-                   VerticalAlignment="Center"
-                   HorizontalAlignment="Center"/>
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
@@ -54,11 +49,6 @@
                                 SelectedDate="{Binding FromDate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
                     <DatePicker Margin="65 0"
                                 SelectedDate="{Binding ToDate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
-                        <i:Interaction.Triggers>
-                            <i:EventTrigger EventName="SelectedDatesChanged">
-                                <i:InvokeCommandAction Command="{Binding FromDateChangedCommand}"/>
-                            </i:EventTrigger>
-                        </i:Interaction.Triggers>
                     </DatePicker>
                 </StackPanel>
                 <Button x:Name="btnGetStat"
