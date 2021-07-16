@@ -17,3 +17,23 @@ C:\Users\Пользователь\Desktop\Дима\GeekBrains\Тестовые �
 C:\Users\Пользователь\Desktop\Дима\GeekBrains\Тестовые задания\Прогностические решения\AddressBook\AddressBook\obj\Debug\AddressBook.csproj.CopyComplete
 C:\Users\Пользователь\Desktop\Дима\GeekBrains\Тестовые задания\Прогностические решения\AddressBook\AddressBook\obj\Debug\App.baml
 C:\Users\Пользователь\Desktop\Дима\GeekBrains\Тестовые задания\Прогностические решения\AddressBook\AddressBook\obj\Debug\View\Styles\Styles.baml
+C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\Repository\csharp\WPF\AddressBook\AddressBook\bin\Debug\AddressBook.exe.config
+C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\Repository\csharp\WPF\AddressBook\AddressBook\bin\Debug\AddressBook.exe
+C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\Repository\csharp\WPF\AddressBook\AddressBook\bin\Debug\AddressBook.pdb
+C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\Repository\csharp\WPF\AddressBook\AddressBook\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\Repository\csharp\WPF\AddressBook\AddressBook\obj\Debug\AddressBook.csprojAssemblyReference.cache
+C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\Repository\csharp\WPF\AddressBook\AddressBook\obj\Debug\View\Styles\Styles.baml
+C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\Repository\csharp\WPF\AddressBook\AddressBook\obj\Debug\View\MainWindow.g.cs
+C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\Repository\csharp\WPF\AddressBook\AddressBook\obj\Debug\App.g.cs
+C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\Repository\csharp\WPF\AddressBook\AddressBook\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\Repository\csharp\WPF\AddressBook\AddressBook\obj\Debug\AddressBook_MarkupCompile.cache
+C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\Repository\csharp\WPF\AddressBook\AddressBook\obj\Debug\AddressBook_MarkupCompile.lref
+C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\Repository\csharp\WPF\AddressBook\AddressBook\obj\Debug\App.baml
+C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\Repository\csharp\WPF\AddressBook\AddressBook\obj\Debug\View\MainWindow.baml
+C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\Repository\csharp\WPF\AddressBook\AddressBook\obj\Debug\AddressBook.g.resources
+C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\Repository\csharp\WPF\AddressBook\AddressBook\obj\Debug\AddressBook.Properties.Resources.resources
+C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\Repository\csharp\WPF\AddressBook\AddressBook\obj\Debug\AddressBook.csproj.GenerateResource.cache
+C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\Repository\csharp\WPF\AddressBook\AddressBook\obj\Debug\AddressBook.csproj.CoreCompileInputs.cache
+C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\Repository\csharp\WPF\AddressBook\AddressBook\obj\Debug\AddressBook.csproj.CopyComplete
+C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\Repository\csharp\WPF\AddressBook\AddressBook\obj\Debug\AddressBook.exe
+C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\Repository\csharp\WPF\AddressBook\AddressBook\obj\Debug\AddressBook.pdb
