@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<ArrayOfContact xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Contact>
+    <Id>3</Id>
+    <Name>Дмитрий</Name>
+    <LastName>Тихонов</LastName>
+    <PhoneNumber>+7-927-723-10-73</PhoneNumber>
+  </Contact>
+  <Contact>
+    <Id>5</Id>
+    <Name>Иван</Name>
+    <LastName>Иванов</LastName>
+    <PhoneNumber>+7-927-723-10-72</PhoneNumber>
+  </Contact>
+  <Contact>
+    <Id>6</Id>
+    <Name>Петр</Name>
+    <LastName>Петров</LastName>
+    <PhoneNumber>+7-927-723-10-71</PhoneNumber>
+  </Contact>
+</ArrayOfContact>

@@ -32,3 +32,4 @@ C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\Repository
 C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\Repository\csharp\WPF\Cost_Control\Cost_Control\obj\Release\Cost_Control.csproj.CopyComplete
 C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\Repository\csharp\WPF\Cost_Control\Cost_Control\obj\Release\Cost_Control.exe
 C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\Repository\csharp\WPF\Cost_Control\Cost_Control\obj\Release\Cost_Control.pdb
+C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\Repository\csharp\WPF\Cost_Control\Cost_Control\obj\Release\Cost_Control.csprojAssemblyReference.cache

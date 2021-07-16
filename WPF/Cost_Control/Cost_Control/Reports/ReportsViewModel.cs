@@ -27,7 +27,7 @@ namespace Cost_Control.Reports
             CostsForReports = costLists.GetCosts(SelectedName, SelectedDate);
             OnPropertyChanged("CostsForReports");
         }
-        private bool CanSelect(object obj) => SelectedDate != null && SelectedName != null ? true : false;
+        private bool CanSelect(object obj) => SelectedDate != null && SelectedName != null;
         public ICommand GetStat
         {
             get => new DelegateCommand(GetStatInPeriod, CanGetStats);
@@ -37,6 +37,6 @@ namespace Cost_Control.Reports
             CostsForReports = statsList.GetStatInPeriod(costLists, SelectedName, FromDate, ToDate);
             OnPropertyChanged("CostsForReports");
         }
-        private bool CanGetStats(object obj) => SelectedName != null ? true : false;
+        private bool CanGetStats(object obj) => SelectedName != null;
     }
 }

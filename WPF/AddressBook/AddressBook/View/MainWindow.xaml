@@ -1,0 +1,140 @@
+﻿<Window x:Class="AddressBook.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:local="clr-namespace:AddressBook.ViewModel"
+        xmlns:vr="clr-namespace:AddressBook.Model.Validation"
+        mc:Ignorable="d"
+        Height="450" 
+        Width="800"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
+    <Window.DataContext>
+        <local:MainViewModel/>
+    </Window.DataContext>
+    <Window.Resources/>
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Closing">
+            <i:InvokeCommandAction Command="{Binding WindowClosing}" />
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="9*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0"
+              Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBlock Text="Имя"
+                           Grid.Column="0"
+                           Grid.Row="0"/>
+                <TextBox Grid.Column="1"
+                         Grid.Row="0">
+                    <TextBox.Text>
+                        <Binding Path="Name"
+                                 Mode="TwoWay"
+                                 UpdateSourceTrigger="PropertyChanged"
+                                 ValidatesOnExceptions="True">
+                            <Binding.ValidationRules>
+                                <vr:NameValidationRule/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+                <TextBlock Text="Фамилия"
+                           Grid.Column="0"
+                           Grid.Row="1"/>
+                <TextBox Grid.Column="1"
+                         Grid.Row="1">
+                    <TextBox.Text>
+                        <Binding Path="LastName"
+                                 Mode="TwoWay"
+                                 UpdateSourceTrigger="PropertyChanged"
+                                 ValidatesOnExceptions="True">
+                            <Binding.ValidationRules>
+                                <vr:NameValidationRule/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+                <TextBlock Text="Телефон"
+                           Grid.Column="0"
+                           Grid.Row="2"/>
+                <TextBox Grid.Column="1"
+                         Grid.Row="2">
+                    <TextBox.Text>
+                        <Binding Path="PhoneNumber"
+                                 Mode="TwoWay"
+                                 UpdateSourceTrigger="PropertyChanged"
+                                 ValidatesOnExceptions="True">
+                            <Binding.ValidationRules>
+                                <vr:PhoneValidationRule/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Content="Добавить"
+                        Grid.Column="0"
+                        Style="{StaticResource AddButton}"
+                        Command="{Binding ClickAdd}"/>
+                <Button Content="Удалить"
+                        Grid.Column="1"
+                        Command="{Binding ClickDelete}"/>
+            </Grid>
+        </Grid>
+        <DataGrid Grid.Column="1"
+                  Grid.Row="1"
+                  ItemsSource="{Binding Contacts, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                  SelectedItem="{Binding SelectedContact}">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="columnId"
+                                    Header="ID"
+                                    Binding="{Binding Id}"
+                                    IsReadOnly="True"
+                                    Width="1*"
+                                    />
+                <DataGridTextColumn x:Name="columnName"
+                                    Header="Имя"
+                                    Binding="{Binding Name}"
+                                    Width="3*"
+                                    />
+                <DataGridTextColumn x:Name="сolumnLastName"
+                                    Header="Фамилия"
+                                    Binding="{Binding LastName}"
+                                    Width="3*"
+                                    />
+                <DataGridTextColumn x:Name="columnPhoneNumber"
+                                    Header="Телефон"
+                                    Binding="{Binding PhoneNumber}"
+                                    Width="5*"
+                                    />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
