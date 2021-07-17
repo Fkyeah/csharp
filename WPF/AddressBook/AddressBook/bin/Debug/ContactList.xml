@@ -18,4 +18,16 @@
     <LastName>Петров</LastName>
     <PhoneNumber>+7-927-723-10-71</PhoneNumber>
   </Contact>
+  <Contact>
+    <Id>7</Id>
+    <Name>Дмитрий</Name>
+    <LastName>Тихонов</LastName>
+    <PhoneNumber>+7-927-723-01-73</PhoneNumber>
+  </Contact>
+  <Contact>
+    <Id>8</Id>
+    <Name>Дмитрий</Name>
+    <LastName>Тихонов</LastName>
+    <PhoneNumber>+7-927-723-91-22</PhoneNumber>
+  </Contact>
 </ArrayOfContact>

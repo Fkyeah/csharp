@@ -1,4 +1,5 @@
 ﻿using AddressBook.Model;
+using System;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Windows.Input;
@@ -47,16 +48,17 @@ namespace AddressBook.ViewModel
         }
         private bool CanDelete(object obj) => SelectedContact != null;
         #endregion
-        #region EventTrigger Close Window
-        public ICommand WindowClosing
+        #region Click Button Power
+        public ICommand ClickPower
         {
-            get => new DelegateCommand(CloseWindow, CanCloseWindow);
+            get => new DelegateCommand(OffProgram, CanAlways);
         }
-        private void CloseWindow(object obj)
+        private void OffProgram(object obj)
         {
             ContactList.Save(Contacts);
+            Environment.Exit(0);
         }
-        private bool CanCloseWindow(object obj) => true;
+        private bool CanAlways(object obj) => true;
         #endregion
     }
 }

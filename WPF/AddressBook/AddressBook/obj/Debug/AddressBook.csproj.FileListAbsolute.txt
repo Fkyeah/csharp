@@ -21,7 +21,6 @@ C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\Repository
 C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\Repository\csharp\WPF\AddressBook\AddressBook\bin\Debug\AddressBook.exe
 C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\Repository\csharp\WPF\AddressBook\AddressBook\bin\Debug\AddressBook.pdb
 C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\Repository\csharp\WPF\AddressBook\AddressBook\bin\Debug\System.Windows.Interactivity.dll
-C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\Repository\csharp\WPF\AddressBook\AddressBook\obj\Debug\AddressBook.csprojAssemblyReference.cache
 C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\Repository\csharp\WPF\AddressBook\AddressBook\obj\Debug\View\Styles\Styles.baml
 C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\Repository\csharp\WPF\AddressBook\AddressBook\obj\Debug\View\MainWindow.g.cs
 C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\Repository\csharp\WPF\AddressBook\AddressBook\obj\Debug\App.g.cs
@@ -37,3 +36,9 @@ C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\Repository
 C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\Repository\csharp\WPF\AddressBook\AddressBook\obj\Debug\AddressBook.csproj.CopyComplete
 C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\Repository\csharp\WPF\AddressBook\AddressBook\obj\Debug\AddressBook.exe
 C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\Repository\csharp\WPF\AddressBook\AddressBook\obj\Debug\AddressBook.pdb
+C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\Repository\csharp\WPF\AddressBook\AddressBook\bin\Debug\MaterialDesignColors.dll
+C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\Repository\csharp\WPF\AddressBook\AddressBook\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\Repository\csharp\WPF\AddressBook\AddressBook\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\Repository\csharp\WPF\AddressBook\AddressBook\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\Repository\csharp\WPF\AddressBook\AddressBook\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Пользователь\Desktop\Дима\GeekBrains\C-SHARP\Repository\csharp\WPF\AddressBook\AddressBook\obj\Debug\AddressBook.csprojAssemblyReference.cache
